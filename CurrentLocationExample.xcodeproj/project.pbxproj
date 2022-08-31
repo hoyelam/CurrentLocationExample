@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17C5887928BF77B300539DBC /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C5887828BF77B300539DBC /* ContentViewModel.swift */; };
 		17D571FE28BB9130008561D0 /* CurrentLocationExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D571FD28BB9130008561D0 /* CurrentLocationExampleApp.swift */; };
 		17D5720028BB9130008561D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D571FF28BB9130008561D0 /* ContentView.swift */; };
 		17D5720228BB9130008561D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D5720128BB9130008561D0 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		17D5720F28BB9131008561D0 /* CurrentLocationExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5720E28BB9131008561D0 /* CurrentLocationExampleTests.swift */; };
 		17D5721928BB9131008561D0 /* CurrentLocationExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5721828BB9131008561D0 /* CurrentLocationExampleUITests.swift */; };
 		17D5721B28BB9131008561D0 /* CurrentLocationExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5721A28BB9131008561D0 /* CurrentLocationExampleUITestsLaunchTests.swift */; };
+		17D5722828BB9693008561D0 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D5722728BB9693008561D0 /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17C5887828BF77B300539DBC /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		17D571FA28BB9130008561D0 /* CurrentLocationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrentLocationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D571FD28BB9130008561D0 /* CurrentLocationExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationExampleApp.swift; sourceTree = "<group>"; };
 		17D571FF28BB9130008561D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		17D5721428BB9131008561D0 /* CurrentLocationExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrentLocationExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D5721828BB9131008561D0 /* CurrentLocationExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationExampleUITests.swift; sourceTree = "<group>"; };
 		17D5721A28BB9131008561D0 /* CurrentLocationExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		17D5722728BB9693008561D0 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				17D571FF28BB9130008561D0 /* ContentView.swift */,
 				17D5720128BB9130008561D0 /* Assets.xcassets */,
 				17D5720328BB9130008561D0 /* Preview Content */,
+				17D5722728BB9693008561D0 /* LocationService.swift */,
+				17C5887828BF77B300539DBC /* ContentViewModel.swift */,
 			);
 			path = CurrentLocationExample;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17C5887928BF77B300539DBC /* ContentViewModel.swift in Sources */,
 				17D5720028BB9130008561D0 /* ContentView.swift in Sources */,
+				17D5722828BB9693008561D0 /* LocationService.swift in Sources */,
 				17D571FE28BB9130008561D0 /* CurrentLocationExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,8 +425,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrentLocationExample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app tracks your location for the main feature";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,8 +455,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CurrentLocationExample/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app tracks your location for the main feature";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
